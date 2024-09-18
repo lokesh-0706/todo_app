@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-app</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="sign">
+      <div id="signup">
+        SignUp
+        <input
+          id="signup_username"
+          type="text"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          id="signup_password"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button onclick="signup()">Submit</button>
+      </div>
+      <div id="signin">
+        Signin
+        <input
+          id="signin_username"
+          type="text"
+          name="username"
+          placeholder="Username"
+        />
+        <input
+          id="signin_password"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button onclick="signin()">Submit</button>
+      </div>
+    </div>
+    <div class="todos" id="todo">
+      <input type="text" placeholder="Add todo here" id="todo-input" />
+      <button onclick="addTodo()">Add Todo</button>
+      <div>
+        <button onclick="logout()">Logout</button>
+      </div>
+      <div class="todo-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
